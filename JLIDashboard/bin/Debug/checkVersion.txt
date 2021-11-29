@@ -1,0 +1,5 @@
+Version=1000
+Filename=updated.zip
+Launcher=JLIDashboard.exe
+VersionCheckerUrl=http://210.213.236.202:1102/app/u/stl/exe/eb4b67758c07ac09280fb082257388ff/check
+DownloadUrl=http://210.213.236.202:1102/app/u/stl/exe/eb4b67758c07ac09280fb082257388ff/download

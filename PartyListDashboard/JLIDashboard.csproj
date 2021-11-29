@@ -1,0 +1,1098 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26AA0646-B039-441B-BD4E-C9031E927FFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JLIDashboard</RootNamespace>
+    <AssemblyName>JLIDashboard</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\ESAT_Lahug_Share_File\Update\JLIDashboard\Debug\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>48F79205F97557796FAC23E9C790FC4FC7A4676B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>JLIDashboard_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.95.4\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.78\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.UI, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.1\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebCam_Capture">
+      <HintPath>C:\Users\Sabong Arena\Desktop\DLLforAddReference\WebCam_Capture.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="+Module\Classes\Common\AggrUtils.cs" />
+    <Compile Include="+Module\Classes\Common\API.cs" />
+    <Compile Include="+Module\Classes\Common\Extensions\DevExpress.cs" />
+    <Compile Include="+Module\Classes\Common\Extensions\FormCollection.cs" />
+    <Compile Include="+Module\Classes\Common\ApkUploader.cs" />
+    <Compile Include="+Module\Classes\Common\ImgService.cs" />
+    <Compile Include="+Module\Classes\Common\Pusher.cs" />
+    <Compile Include="+Module\Classes\Common\Timeout.cs" />
+    <Compile Include="+Module\Classes\Database.cs" />
+    <Compile Include="+Module\Classes\FileObject.cs" />
+    <Compile Include="+Module\Classes\HelperFunction.cs" />
+    <Compile Include="+Module\Classes\SearchLookUpClass.cs" />
+    <Compile Include="+Module\Classes\Utilities.cs" />
+    <Compile Include="+Module\DevXSettings.cs" />
+    <Compile Include="+Module\Enum\Results.cs" />
+    <Compile Include="+Module\StaticSettings.cs" />
+    <Compile Include="+Module\MainModule.cs" />
+    <Compile Include="ACCOUNTING\AccountCredits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTING\AccountCredits.Designer.cs">
+      <DependentUpon>AccountCredits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTING\SentCredits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTING\SentCredits.Designer.cs">
+      <DependentUpon>SentCredits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTING\PowerAPCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTING\PowerAPCredit.Designer.cs">
+      <DependentUpon>PowerAPCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTING\RequestCreditBal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTING\RequestCreditBal.Designer.cs">
+      <DependentUpon>RequestCreditBal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTING\TransferCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTING\TransferCredit.designer.cs">
+      <DependentUpon>TransferCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTING\TransferCredits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTING\TransferCredits.designer.cs">
+      <DependentUpon>TransferCredits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\PromotePlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\PromotePlayer.Designer.cs">
+      <DependentUpon>PromotePlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\TransferToPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\TransferToPlayer.Designer.cs">
+      <DependentUpon>TransferToPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTS\Subscribers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTS\Subscribers.Designer.cs">
+      <DependentUpon>Subscribers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\TransferCoordinator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\TransferCoordinator.Designer.cs">
+      <DependentUpon>TransferCoordinator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\TransferPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\TransferPlayer.Designer.cs">
+      <DependentUpon>TransferPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\PlayerEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\PlayerEntry.Designer.cs">
+      <DependentUpon>PlayerEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\GenCoordEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\GenCoordEntry.Designer.cs">
+      <DependentUpon>GenCoordEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\CoordEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\CoordEntry.Designer.cs">
+      <DependentUpon>CoordEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\InvitePlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\InvitePlayer.Designer.cs">
+      <DependentUpon>InvitePlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\InviteCoord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\InviteCoord.Designer.cs">
+      <DependentUpon>InviteCoord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\InviteGenCoord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTS\frm\InviteGenCoord.Designer.cs">
+      <DependentUpon>InviteGenCoord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTS\UserAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTS\UserAccounts.Designer.cs">
+      <DependentUpon>UserAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APIConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APIConnection.Designer.cs">
+      <DependentUpon>APIConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GENERAL SETUP\CreateHeadOffice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GENERAL SETUP\CreateHeadOffice.Designer.cs">
+      <DependentUpon>CreateHeadOffice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="OPERATION\GameResults_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATION\GameResults_.Designer.cs">
+      <DependentUpon>GameResults_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\APKVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\APKVersion.Designer.cs">
+      <DependentUpon>APKVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\Branches_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\Branches_.Designer.cs">
+      <DependentUpon>Branches_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\Branches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\Branches.Designer.cs">
+      <DependentUpon>Branches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connection.Designer.cs">
+      <DependentUpon>Connection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainDashboard.Designer.cs">
+      <DependentUpon>MainDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION\TextBlasting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATION\TextBlasting.Designer.cs">
+      <DependentUpon>TextBlasting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION\GameResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATION\GameResults.Designer.cs">
+      <DependentUpon>GameResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION\GameProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATION\GameProfile.Designer.cs">
+      <DependentUpon>GameProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION\GameSettings_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATION\GameSettings_.Designer.cs">
+      <DependentUpon>GameSettings_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION\GameSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATION\GameSettings.Designer.cs">
+      <DependentUpon>GameSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION\DrawSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATION\DrawSchedule.Designer.cs">
+      <DependentUpon>DrawSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION\Announcement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATION\Announcement.Designer.cs">
+      <DependentUpon>Announcement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION\LiveStreaming.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATION\LiveStreaming.Designer.cs">
+      <DependentUpon>LiveStreaming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION\ResultPosting_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATION\ResultPosting_.Designer.cs">
+      <DependentUpon>ResultPosting_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION\ResultPosting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATION\ResultPosting.Designer.cs">
+      <DependentUpon>ResultPosting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\ForfeitInterval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\ForfeitInterval.Designer.cs">
+      <DependentUpon>ForfeitInterval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\frm\GeneratID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\frm\GeneratID.Designer.cs">
+      <DependentUpon>GeneratID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\frm\PrintID.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\frm\PrintID.Designer.cs">
+      <DependentUpon>PrintID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\frm\Print_IDs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\frm\Print_IDs.Designer.cs">
+      <DependentUpon>Print_IDs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\frm\ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\frm\ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\frm\UpdateMasterListDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\frm\UpdateMasterListDetails.Designer.cs">
+      <DependentUpon>UpdateMasterListDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\frm\Print_ID.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\frm\Print_ID.Designer.cs">
+      <DependentUpon>Print_ID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\frm\UploadAPK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\frm\UploadAPK.Designer.cs">
+      <DependentUpon>UploadAPK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\MasterList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\MasterList.Designer.cs">
+      <DependentUpon>MasterList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\UserAccount_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\UserAccount_.Designer.cs">
+      <DependentUpon>UserAccount_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\UserSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\UserSettings.Designer.cs">
+      <DependentUpon>UserSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PCSO\Companies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PCSO\Companies.Designer.cs">
+      <DependentUpon>Companies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PCSO\MacAddressAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PCSO\MacAddressAssignment.Designer.cs">
+      <DependentUpon>MacAddressAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PCSO\PCSODashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PCSO\PCSODashboard.Designer.cs">
+      <DependentUpon>PCSODashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REPORTING\ActivityLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTING\ActivityLogs.Designer.cs">
+      <DependentUpon>ActivityLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTING\CorrectiveAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTING\CorrectiveAction.Designer.cs">
+      <DependentUpon>CorrectiveAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTING\InActiveUserAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTING\InActiveUserAccount.Designer.cs">
+      <DependentUpon>InActiveUserAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTING\MaxSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTING\MaxSales.Designer.cs">
+      <DependentUpon>MaxSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTING\PlayerNoBet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTING\PlayerNoBet.Designer.cs">
+      <DependentUpon>PlayerNoBet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTING\TotalTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTING\TotalTransaction.Designer.cs">
+      <DependentUpon>TotalTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTING\GameBetsHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTING\GameBetsHistory.designer.cs">
+      <DependentUpon>GameBetsHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTING\Trouble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTING\Trouble.Designer.cs">
+      <DependentUpon>Trouble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTING\TroubleAttachment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTING\TroubleAttachment.Designer.cs">
+      <DependentUpon>TroubleAttachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTING\WinningsHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTING\WinningsHistory.Designer.cs">
+      <DependentUpon>WinningsHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTINGS\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTINGS\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTINGS\AccountInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTINGS\AccountInfo.Designer.cs">
+      <DependentUpon>AccountInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TREASURY\ClaimCommissionApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TREASURY\ClaimCommissionApproval.designer.cs">
+      <DependentUpon>ClaimCommissionApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TREASURY\Remittances__.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TREASURY\Remittances__.Designer.cs">
+      <DependentUpon>Remittances__.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TREASURY\RemittanceEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TREASURY\RemittanceEntry.Designer.cs">
+      <DependentUpon>RemittanceEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TREASURY\Remittances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TREASURY\Remittances.Designer.cs">
+      <DependentUpon>Remittances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TREASURY\ClaimCommission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TREASURY\ClaimCommission.Designer.cs">
+      <DependentUpon>ClaimCommission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TREASURY\ClaimWinnings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TREASURY\ClaimWinnings.Designer.cs">
+      <DependentUpon>ClaimWinnings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TREASURY\Commissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TREASURY\Commissions.Designer.cs">
+      <DependentUpon>Commissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TREASURY\ResultConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TREASURY\ResultConfirmation.Designer.cs">
+      <DependentUpon>ResultConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TREASURY\Winnings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TREASURY\Winnings.Designer.cs">
+      <DependentUpon>Winnings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAccess.Designer.cs">
+      <DependentUpon>UserAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATOR\UserAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATOR\UserAccount.Designer.cs">
+      <DependentUpon>UserAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebCam.cs" />
+    <EmbeddedResource Include="ACCOUNTING\AccountCredits.resx">
+      <DependentUpon>AccountCredits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTING\SentCredits.resx">
+      <DependentUpon>SentCredits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTING\PowerAPCredit.resx">
+      <DependentUpon>PowerAPCredit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTING\RequestCreditBal.resx">
+      <DependentUpon>RequestCreditBal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTING\TransferCredit.resx">
+      <DependentUpon>TransferCredit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTING\TransferCredits.resx">
+      <DependentUpon>TransferCredits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTS\frm\PromotePlayer.resx">
+      <DependentUpon>PromotePlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTS\frm\TransferToPlayer.resx">
+      <DependentUpon>TransferToPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTS\Subscribers.resx">
+      <DependentUpon>Subscribers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTS\frm\TransferCoordinator.resx">
+      <DependentUpon>TransferCoordinator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTS\frm\TransferPlayer.resx">
+      <DependentUpon>TransferPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTS\frm\PlayerEntry.resx">
+      <DependentUpon>PlayerEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTS\frm\GenCoordEntry.resx">
+      <DependentUpon>GenCoordEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTS\frm\CoordEntry.resx">
+      <DependentUpon>CoordEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTS\frm\InvitePlayer.resx">
+      <DependentUpon>InvitePlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTS\frm\ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTS\frm\InviteCoord.resx">
+      <DependentUpon>InviteCoord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTS\frm\InviteGenCoord.resx">
+      <DependentUpon>InviteGenCoord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTS\UserAccounts.resx">
+      <DependentUpon>UserAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APIConnection.resx">
+      <DependentUpon>APIConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GENERAL SETUP\CreateHeadOffice.resx">
+      <DependentUpon>CreateHeadOffice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATION\GameResults_.resx">
+      <DependentUpon>GameResults_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\APKVersion.resx">
+      <DependentUpon>APKVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\Branches_.resx">
+      <DependentUpon>Branches_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\Branches.resx">
+      <DependentUpon>Branches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connection.resx">
+      <DependentUpon>Connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainDashboard.resx">
+      <DependentUpon>MainDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATION\TextBlasting.resx">
+      <DependentUpon>TextBlasting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATION\GameResults.resx">
+      <DependentUpon>GameResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATION\GameProfile.resx">
+      <DependentUpon>GameProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATION\GameSettings_.resx">
+      <DependentUpon>GameSettings_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATION\GameSettings.resx">
+      <DependentUpon>GameSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATION\DrawSchedule.resx">
+      <DependentUpon>DrawSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATION\Announcement.resx">
+      <DependentUpon>Announcement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATION\LiveStreaming.resx">
+      <DependentUpon>LiveStreaming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATION\ResultPosting_.resx">
+      <DependentUpon>ResultPosting_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATION\ResultPosting.resx">
+      <DependentUpon>ResultPosting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\ForfeitInterval.resx">
+      <DependentUpon>ForfeitInterval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\frm\GeneratID.resx">
+      <DependentUpon>GeneratID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\frm\PrintID.resx">
+      <DependentUpon>PrintID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\frm\Print_IDs.resx">
+      <DependentUpon>Print_IDs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\frm\ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\frm\UpdateMasterListDetails.resx">
+      <DependentUpon>UpdateMasterListDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\frm\Print_ID.resx">
+      <DependentUpon>Print_ID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\frm\UploadAPK.resx">
+      <DependentUpon>UploadAPK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\MasterList.resx">
+      <DependentUpon>MasterList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\UserAccount_.resx">
+      <DependentUpon>UserAccount_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\UserSettings.resx">
+      <DependentUpon>UserSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PCSO\Companies.resx">
+      <DependentUpon>Companies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PCSO\MacAddressAssignment.resx">
+      <DependentUpon>MacAddressAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PCSO\PCSODashboard.resx">
+      <DependentUpon>PCSODashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="REPORTING\ActivityLogs.resx">
+      <DependentUpon>ActivityLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTING\CorrectiveAction.resx">
+      <DependentUpon>CorrectiveAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTING\InActiveUserAccount.resx">
+      <DependentUpon>InActiveUserAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTING\MaxSales.resx">
+      <DependentUpon>MaxSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTING\PlayerNoBet.resx">
+      <DependentUpon>PlayerNoBet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTING\TotalTransaction.resx">
+      <DependentUpon>TotalTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTING\GameBetsHistory.resx">
+      <DependentUpon>GameBetsHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTING\Trouble.resx">
+      <DependentUpon>Trouble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTING\TroubleAttachment.resx">
+      <DependentUpon>TroubleAttachment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTING\WinningsHistory.resx">
+      <DependentUpon>WinningsHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTINGS\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTINGS\AccountInfo.resx">
+      <DependentUpon>AccountInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TREASURY\ClaimCommissionApproval.resx">
+      <DependentUpon>ClaimCommissionApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TREASURY\Remittances__.resx">
+      <DependentUpon>Remittances__.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TREASURY\RemittanceEntry.resx">
+      <DependentUpon>RemittanceEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TREASURY\Remittances.resx">
+      <DependentUpon>Remittances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TREASURY\ClaimCommission.resx">
+      <DependentUpon>ClaimCommission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TREASURY\ClaimWinnings.resx">
+      <DependentUpon>ClaimWinnings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TREASURY\Commissions.resx">
+      <DependentUpon>Commissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TREASURY\ResultConfirmation.resx">
+      <DependentUpon>ResultConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TREASURY\Winnings.resx">
+      <DependentUpon>Winnings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccess.resx">
+      <DependentUpon>UserAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATOR\UserAccount.resx">
+      <DependentUpon>UserAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="JLIDashboard_TemporaryKey.pfx" />
+    <None Include="Resources\json\Barangay.json" />
+    <None Include="Resources\json\Country.json" />
+    <None Include="Resources\json\Municipalities.json" />
+    <None Include="Resources\json\Provinces.json" />
+    <None Include="Resources\json\Regions.json" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserKey_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserGroup_32x32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TreeView_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scheduler_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddCalculatedField_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Currency_32x32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CostAnalysis_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowAll_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddFooter_32x32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowAll_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Announcement_32x32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextBox2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Company_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Currency_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apply_32x32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserGroup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HistoryItem_32x32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Currency_32x32 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExportToExcel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="+Module\Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageInfo_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwitchRowColumn_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddGroupHeader_32x32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HistoryItem_32x32 %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Comm\Comm.csproj">
+      <Project>{55233108-553b-4b63-9767-1d90f6667f44}</Project>
+      <Name>Comm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forfeit.gif" />
+    <None Include="Resources\Forfeit.png" />
+    <None Include="Resources\APKLogo.gif" />
+    <Content Include="Resources\Find_16x16 %282%29.png" />
+    <Content Include="Resources\Find_32x32 %282%29.png" />
+    <None Include="Resources\Profiling ID VDVC%28Back%29.gif" />
+    <None Include="Resources\Profiling ID VDVC.gif" />
+    <None Include="Resources\TroubleReport.png" />
+    <None Include="Resources\InActivePlayer.png" />
+    <None Include="Resources\PrintProfiling.png" />
+    <None Include="Resources\UserStatics.png" />
+    <None Include="Resources\MaxSale.png" />
+    <None Include="Resources\NoBet 1.png" />
+    <None Include="Resources\NoBet.png" />
+    <None Include="Resources\001_54.png" />
+    <None Include="Resources\001_43.png" />
+    <Content Include="Resources\applogo.png" />
+    <None Include="Resources\camera-24.png" />
+    <None Include="Resources\flat-icon %282648%29.png" />
+    <None Include="Resources\camera.png" />
+    <None Include="Resources\ID_Layout.jpg" />
+    <None Include="Resources\avatar1.jpg" />
+    <None Include="Resources\avatar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+  </Target>
+</Project>

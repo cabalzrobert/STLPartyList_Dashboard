@@ -1,0 +1,4 @@
+Pusher:Key=90824553CD4CCB3FA572BE4FD254E643
+Pusher:Host=210.213.236.202:9999
+ImgService:Host=http://img.esat-pt.com/upload.php
+ApkUploader:Host=http://apps.esat-pt.com/upload.php?000-a1

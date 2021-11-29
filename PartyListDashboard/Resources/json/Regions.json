@@ -1,0 +1,155 @@
+[
+  {
+    "SeqNo": 1,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "M1",
+    "REGION_CODE": "01",
+    "REGION_NAME": "ARMM",
+    "REGION_LOCATION": "Autonomous Region in Muslim Mindanao",
+    "REGION_INSTANCE": "ARMM Autonomous Region in Muslim Mindanao"
+  },
+  {
+    "SeqNo": 2,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "L1",
+    "REGION_CODE": "02",
+    "REGION_NAME": "CAR",
+    "REGION_LOCATION": "Cordillera Administrative Region",
+    "REGION_INSTANCE": "CAR Cordillera Administrative Region"
+  },
+  {
+    "SeqNo": 3,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "L1",
+    "REGION_CODE": "03",
+    "REGION_NAME": "NCR",
+    "REGION_LOCATION": "National Capital Region",
+    "REGION_INSTANCE": "NCR National Capital Region"
+  },
+  {
+    "SeqNo": 4,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "L1",
+    "REGION_CODE": "04",
+    "REGION_NAME": "Region 1",
+    "REGION_LOCATION": "Ilocos Region",
+    "REGION_INSTANCE": "Region 1 Ilocos Region"
+  },
+  {
+    "SeqNo": 5,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "L1",
+    "REGION_CODE": "05",
+    "REGION_NAME": "Region 2",
+    "REGION_LOCATION": "Cagayan Valley",
+    "REGION_INSTANCE": "Region 2 Cagayan Valley"
+  },
+  {
+    "SeqNo": 6,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "L1",
+    "REGION_CODE": "06",
+    "REGION_NAME": "Region 3",
+    "REGION_LOCATION": "Central Luzon",
+    "REGION_INSTANCE": "Region 3 Central Luzon"
+  },
+  {
+    "SeqNo": 7,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "L1",
+    "REGION_CODE": "07",
+    "REGION_NAME": "Region 4A",
+    "REGION_LOCATION": "CALABARZON",
+    "REGION_INSTANCE": "Region 4A  CALABARZON"
+  },
+  {
+    "SeqNo": 8,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "L1",
+    "REGION_CODE": "08",
+    "REGION_NAME": "Region 4B",
+    "REGION_LOCATION": "MIMAROPA",
+    "REGION_INSTANCE": "Region 4B MIMAROPA"
+  },
+  {
+    "SeqNo": 9,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "L1",
+    "REGION_CODE": "09",
+    "REGION_NAME": "Region 5",
+    "REGION_LOCATION": "Bicol Region",
+    "REGION_INSTANCE": "Region 5 Bicol Region"
+  },
+  {
+    "SeqNo": 10,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "V1",
+    "REGION_CODE": "10",
+    "REGION_NAME": "Region 6",
+    "REGION_LOCATION": "Western Visayas",
+    "REGION_INSTANCE": "Region 6 Western Visayas"
+  },
+  {
+    "SeqNo": 11,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "V1",
+    "REGION_CODE": "11",
+    "REGION_NAME": "Region 7",
+    "REGION_LOCATION": "Central Visayas",
+    "REGION_INSTANCE": "Region 7 Central Visayas"
+  },
+  {
+    "SeqNo": 12,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "V1",
+    "REGION_CODE": "12",
+    "REGION_NAME": "Region 8",
+    "REGION_LOCATION": "Eastern Visayas",
+    "REGION_INSTANCE": "Region 8 Eastern Visayas"
+  },
+  {
+    "SeqNo": 13,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "M1",
+    "REGION_CODE": "13",
+    "REGION_NAME": "Region 9",
+    "REGION_LOCATION": "Zamboanga Peninsula",
+    "REGION_INSTANCE": "Region 9 Zamboanga Peninsula"
+  },
+  {
+    "SeqNo": 14,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "M1",
+    "REGION_CODE": "14",
+    "REGION_NAME": "Region 10",
+    "REGION_LOCATION": "Northern Mindanao",
+    "REGION_INSTANCE": "Region 10 Northern Mindanao"
+  },
+  {
+    "SeqNo": 15,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "M1",
+    "REGION_CODE": "15",
+    "REGION_NAME": "Region 11",
+    "REGION_LOCATION": "Davao Region",
+    "REGION_INSTANCE": "Region 11 Davao Region"
+  },
+  {
+    "SeqNo": 16,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "M1",
+    "REGION_CODE": "16",
+    "REGION_NAME": "Region 12",
+    "REGION_LOCATION": "SOCCSKSARGEN",
+    "REGION_INSTANCE": "Region 12 SOCCSKSARGEN"
+  },
+  {
+    "SeqNo": 17,
+    "COUNTRY_CODE": "63",
+    "ISLAND_CODE": "M1",
+    "REGION_CODE": "17",
+    "REGION_NAME": "Region 13",
+    "REGION_LOCATION": "Caraga Region",
+    "REGION_INSTANCE": "Region 13 Caraga Region"
+  }
+]
